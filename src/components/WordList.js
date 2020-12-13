@@ -1,5 +1,7 @@
 import React,{useState} from 'react'
 import Modal from '@material-ui/core/Modal'
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
 function WordList() {
 
     const [open,setOpen]=useState(false)
@@ -63,9 +65,17 @@ function WordList() {
                 aria-labelledby="simple-model-title"
                 aria-describedby="simple-modal-description"
             >
-                <div>
-                    <h2 id="simple-model-title">Text in a modla</h2>
-                    <p id ="simple-modal-description">ksjbksbdsbvsd</p>
+                <div className="modal_card">
+                    <IconButton aria-label="close" style={{color:"#000",float:'right'}} onClick={handleClose} >
+                    <CloseIcon />
+                    </IconButton>
+                    <div className="modal_content">
+                    <p id="simple-model-title">rhetorical</p>
+                    <hr/>
+                    <div id ="simple-modal-description">
+                        Meaning of the word
+                    </div>
+                    </div>
                 </div>
             </Modal>
         </div>

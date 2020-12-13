@@ -110,3 +110,48 @@
     background-color:purple;
     color:#fff;
 }
+.Add_modal_box{
+    position:fixed;
+    top:35%;
+    left:10%;
+    border:none;
+    background:#fff;
+    height:auto;
+    width:250px;
+    padding:20px;
+    border-radius: 10px;
+    outline:none;
+}
+.add_input_field{
+    width:100%;
+    border:none;
+    outline:none;
+    border-bottom: 2px solid purple;
+    margin-bottom: 30px;
+}
+.modal_btn{
+    border:none;
+    outline:none;
+    background-color: #fff;
+    color:purple;
+    text-align: center;
+    font-weight: 550;
+    float:right;
+    margin-right: 20px;
+}
+.modal_card{
+    position: fixed;
+    top:0;
+    height:100%;
+    background-color: #fff;
+    padding:20px;
+}
+.modal_content{
+    margin-top:50px;
+    overflow-y: scroll;
+    height:95%;
+}
+#simple-model-title{
+    font-size:40px;
+    font-weight: 500;
+}

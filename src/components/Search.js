@@ -4,14 +4,7 @@ import Modal from '@material-ui/core/Modal'
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import axios from 'axios'
-import Add from './Add';
 function Search() {
-    const ApiDetails={
-        app_id : "5c4cb6ce",
-        app_key : "eda438bdd760731c0054b187c7aafa97",
-        language : "en-gb",
-        word_id : "example",
-    }
     const [Text,setText]=useState(undefined)
     const [open,setOpen]=useState(false)
     const [Data,setData]=useState([])
@@ -19,7 +12,7 @@ function Search() {
     const searchHandler=(e)=>{
         setText(e.target.value)
         console.log(Text)
-        axios.get('http://localhost:5000/search',{params:{
+        axios.get('https://vocabapi.herokuapp.com/search',{params:{
             text:Text
         }})
         .then(res=>{

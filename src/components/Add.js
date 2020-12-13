@@ -43,7 +43,7 @@ function Add() {
             console.log('result  Id',res.data.results[0].id)
             console.log('result senses ',res.data.results[0].lexicalEntries[0].entries[0].senses)
             
-            axios.get('http://localhost:5000/add',{params:{data:{
+            axios.get('https://vocabapi.herokuapp.com/add',{params:{data:{
                 id:res.data.results[0].id,
                 origin:res.data.results[0].lexicalEntries[0].entries[0].etymologies,
                 category:res.data.results[0].lexicalEntries[0].lexicalCategory.text,

@@ -17,7 +17,7 @@ function WordList() {
     }
     useEffect(()=>{
 
-        axios.get('http://localhost:5000/getwords')
+        axios.get('https://vocabapi.herokuapp.com/getwords')
         .then(res=>{
             // console.log(res.data)
             setData(res.data)
